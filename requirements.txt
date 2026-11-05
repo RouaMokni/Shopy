@@ -1,0 +1,30 @@
+# --- Data processing ---
+pandas>=2.2
+numpy>=1.26
+openpyxl>=3.1          # import de fichiers Excel
+
+# --- Machine Learning / Forecasting ---
+scikit-learn>=1.4
+xgboost>=2.0
+statsmodels>=0.14      # ETS, ARIMA, baselines de prévision
+
+# --- Base de données ---
+sqlalchemy>=2.0
+psycopg2-binary>=2.9
+
+# --- API (étape 6) ---
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+python-multipart>=0.0.9   # upload de fichiers CSV/Excel
+
+# --- MLOps ---
+mlflow>=2.12
+
+# --- Notebooks & visualisation ---
+matplotlib>=3.8
+jupyterlab>=4.0
+
+# --- Qualité & tests ---
+pytest>=8.0
+ruff>=0.6

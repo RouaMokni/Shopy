@@ -1,0 +1,31 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #17211b; background: #f5f7f3; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.shell { max-width: 1240px; margin: auto; padding: 48px 28px; }
+header { display: flex; justify-content: space-between; gap: 24px; align-items: end; margin-bottom: 36px; }
+.eyebrow, .panel-title span { color: #688271; font-size: 11px; letter-spacing: .14em; font-weight: 700; }
+h1 { font-size: clamp(32px, 5vw, 58px); line-height: 1.02; letter-spacing: -.05em; max-width: 640px; margin: 12px 0; }
+.subtitle { color: #738078; margin: 0; font-size: 16px; }
+.period { background: white; border: 1px solid #e0e8e1; border-radius: 999px; padding: 11px 16px; color: #5d7064; font-size: 13px; white-space: nowrap; }
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 18px; }
+.card, .panel { background: white; border: 1px solid #e4eae5; border-radius: 18px; box-shadow: 0 8px 24px #19342108; }
+.card { padding: 22px; display: grid; gap: 10px; }
+.card span, .card small { color: #7a887f; font-size: 13px; }
+.card strong { font-size: 28px; letter-spacing: -.04em; }
+.grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 18px; }
+.panel { padding: 22px; }
+.wide { grid-column: span 2; }
+.panel-title { display: flex; justify-content: space-between; align-items: center; margin-bottom: 22px; }
+h2 { font-size: 16px; margin: 0; letter-spacing: -.02em; }
+.bars { height: 230px; display: flex; align-items: end; gap: 7px; overflow-x: auto; }
+.bar-wrap { height: 100%; min-width: 24px; display: flex; flex-direction: column; justify-content: end; align-items: center; gap: 8px; }
+.bar { width: 100%; min-height: 4px; background: #a4d76e; border-radius: 5px 5px 2px 2px; }
+.bar-wrap small { color: #8d9991; font-size: 10px; transform: rotate(-45deg); margin-bottom: 4px; }
+.row { display: flex; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 1px solid #edf1ed; font-size: 13px; }
+.row:last-child { border-bottom: 0; }
+.row span { color: #67756b; text-transform: capitalize; }
+.row strong { font-size: 13px; }
+footer { color: #859188; font-size: 12px; margin-top: 20px; }
+.loading, .error { padding: 40px; text-align: center; }
+.error { color: #a34a3b; background: #fff5f2; border-radius: 12px; }
+@media (max-width: 800px) { .shell { padding: 28px 16px; } header { display: block; } .period { display: inline-block; margin-top: 18px; } .cards { grid-template-columns: repeat(2, 1fr); } .grid { display: block; } .panel { margin-bottom: 18px; } .wide { min-height: 300px; } }

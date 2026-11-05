@@ -1,0 +1,22 @@
+# Environnement virtuel (ne JAMAIS zipper ni committer)
+.venv/
+venv/
+
+# Secrets
+.env
+
+# Caches
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Données : brutes et générées ignorées, échantillon synthétique versionné
+data/raw/*
+data/processed/*
+!data/sample/
+
+# MLflow
+mlruns/
+mlartifacts/
